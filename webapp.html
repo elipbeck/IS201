@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Guessing Game</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 40px;
+      background: #f0f8ff;
+    }
+    input, button {
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Number Guessing Game</h1>
+  <p>Guess a number between 1 and 100</p>
+  <input type="number" id="guessInput" />
+  <button onclick="checkGuess()">Guess</button>
+  <p id="message"></p>
+  <a href="scratch.html">Back to Scratch Page</a>
+
+  <script>
+    const answer = Math.floor(Math.random() * 100) + 1;
+    let attempts = 0;
+
+    function checkGuess() {
+      const guess = parseInt(document.getElementById("guessInput").value);
+      const message = document.getElementById("message");
+      attempts++;
+      if (guess === answer) {
+        message.textContent = `🎉 Correct! It took you ${attempts} tries.`;
+      } else if (guess < answer) {
+        message.textContent = "Too low. Try again.";
+      } else {
+        message.textContent = "Too high. Try again.";
+      }
+    }
+  </script>
+</body>
+</html>
