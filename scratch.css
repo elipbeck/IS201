@@ -4,8 +4,8 @@
 }
 
 .header{
-    background-color: #131f22;
-    color:white;
+    background-color: #2498b5;
+    color:rgb(195, 17, 17);
     height: 100px;
     padding-top: 10px;
     padding-bottom: 7px;
@@ -13,7 +13,7 @@
 }
 
 .mainbody{
-    background-color: #0085a1;
+    background-color: #2f23b4;
 }
 
 .footer{
@@ -41,7 +41,7 @@ nav{
 }
 
 nav a{
-    color:rgb(252, 251, 251);
+    color:rgb(215, 92, 92);
     text-decoration: none;
     padding: 15px;
     font-weight: bold;
